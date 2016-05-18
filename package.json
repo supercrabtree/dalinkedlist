@@ -1,0 +1,24 @@
+{
+  "scripts": {
+    "test": "ava",
+    "start": "ava --watch"
+  },
+  "name": "dalinkedlist",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supercrabtree/dalinkedlist.git"
+  },
+  "keywords": [],
+  "author": "George Crabtree <supercrabtree@googlemail.com> (https://github.com/supercrabtree)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/supercrabtree/dalinkedlist/issues"
+  },
+  "homepage": "https://github.com/supercrabtree/dalinkedlist#readme",
+  "description": "",
+  "devDependencies": {
+    "ava": "0.14.0"
+  }
+}
