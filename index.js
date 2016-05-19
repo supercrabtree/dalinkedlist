@@ -38,8 +38,13 @@ module.exports = function dalinkedlist() {
       
     },
 
-    removeAt: function () {
-      
+    removeAt: function (position) {
+      if (!(position > -1 && position < length)) {
+        throw new RangeError('Invalid index');
+      }
+      else {
+        
+      }
     },
 
     remove: function () {

@@ -25,6 +25,14 @@ test('linkedList.append()', t => {
 
 });
 
+test('linkedList.removeAt()', t => {
+
+  var list = createLinkedList('hat', 'cow', 'tree', 'house');
+  t.throws(() => list.removeAt(-1));
+  t.throws(() => list.removeAt(100));
+
+});
+
 test('linkedList.toString()', t => {
 
   var list = createLinkedList('hat', 'cow', 'tree', 'house');
