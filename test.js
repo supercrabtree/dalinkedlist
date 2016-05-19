@@ -37,6 +37,18 @@ test('linkedList.removeAt()', t => {
 
 });
 
+test('linkedList.insertAt()', t => {
+
+  var list = createLinkedList('hat', 'tree', 'house');
+  t.throws(() => list.insertAt(-1));
+  t.throws(() => list.insertAt(100))
+
+  var returnValue = list.insertAt('mouse', 1);
+  t.is(returnValue, list);
+  t.deepEqual(list.toArray(), ['hat', 'mouse', 'tree', 'house']);
+
+});
+
 test('linkedList.toString()', t => {
 
   var list = createLinkedList('hat', 'cow', 'tree', 'house');

@@ -34,8 +34,32 @@ module.exports = function dalinkedlist() {
       return linkedList;
     },
 
-    insert: function () {
-      
+    insertAt: function (value, position) {
+
+      var node = {value: value};
+      var index = 0;
+      var current = head;
+      var previous;
+
+      if (!(position > -1 && position < length)) {
+        throw new RangeError('Invalid index');
+      }
+      else {
+        if (position === 0) {
+          node.next = current;
+          head = node;
+        }
+        else {
+          while (index < position) {
+            previous = current;
+            current = current.next;
+            index++;
+          }
+          node.next = current;
+          previous.next = node;
+        }
+      }
+      return linkedList;
     },
 
     removeAt: function (position) {
