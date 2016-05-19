@@ -49,6 +49,15 @@ test('linkedList.insertAt()', t => {
 
 });
 
+test('linkedList.remove()', t => {
+
+  var list = createLinkedList('hat', 'cow', 'tree', 'house');
+  var returnValue = list.remove('tree');
+  t.is(returnValue, list);
+  t.is(list.size, 3);
+
+});
+
 test('linkedList.indexOf()', t => {
 
   var list = createLinkedList('hat', 'cow', 'tree', 'house');

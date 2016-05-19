@@ -93,8 +93,10 @@ module.exports = function dalinkedlist() {
       }
     },
 
-    remove: function () {
-      
+    remove: function (value) {
+      var index = linkedList.indexOf(value);
+      linkedList.removeAt(index);
+      return linkedList;
     },
 
     indexOf: function (value) {
