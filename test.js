@@ -1,6 +1,9 @@
 import test from 'ava';
 import createLinkedList from './';
 
+console.log();
+console.log(Date.now());
+
 test('linkedList.size', t => {
 
   var list = createLinkedList();
