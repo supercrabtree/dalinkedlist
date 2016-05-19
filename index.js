@@ -97,8 +97,17 @@ module.exports = function dalinkedlist() {
       
     },
 
-    indexOf: function () {
-      
+    indexOf: function (value) {
+      var current = head;
+      var index = 0;
+
+      while (current) {
+        if (value === current.value) return index;
+        current = current.next;
+        index++;
+      }
+
+      return -1;
     },
 
     toString: function () {

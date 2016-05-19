@@ -49,6 +49,16 @@ test('linkedList.insertAt()', t => {
 
 });
 
+test('linkedList.indexOf()', t => {
+
+  var list = createLinkedList('hat', 'cow', 'tree', 'house');
+  var index = list.indexOf('tree');
+  var index2 = list.indexOf('hi mum');
+  t.is(index, 2);
+  t.is(index2, -1);
+
+});
+
 test('linkedList.toString()', t => {
 
   var list = createLinkedList('hat', 'cow', 'tree', 'house');
