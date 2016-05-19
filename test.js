@@ -81,3 +81,13 @@ test('linkedList.toArray()', t => {
   t.deepEqual(list.toArray(), ['hat', 'cow', 'tree', 'house'])
 
 });
+
+test('linkedList is immutable', t => {
+
+  var list = createLinkedList();
+  t.throws(() => list.hat = 'yay');
+  t.throws(() => list.indexOf = 1);
+  t.throws(() => delete list.indexOf);
+
+});
+
