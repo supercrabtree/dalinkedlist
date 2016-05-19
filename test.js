@@ -14,6 +14,16 @@ test('linkedList.size', t => {
 
 });
 
+test('linkedList.head', t => {
+
+  var list = createLinkedList();
+  t.is(list.head, undefined);
+
+  ['hat', 2, 3, 4].forEach(list.append);
+  t.is(list.head, 'hat');
+
+});
+
 test('linkedList.append()', t => {
 
   var list = createLinkedList();

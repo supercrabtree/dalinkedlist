@@ -13,6 +13,11 @@ module.exports = function dalinkedlist() {
       return length;
     },
 
+    get head() {
+      if (head === undefined) return undefined;
+      return head.value;
+    },
+
     // methods
     append: function (value) {
 
