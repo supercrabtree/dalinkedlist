@@ -30,7 +30,7 @@ module.exports = function dalinkedlist() {
       else {
         current = head;
         while (current.next) {
-          current.next = node;
+          current = current.next;
         }
         current.next = node;
       }
