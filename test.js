@@ -20,4 +20,8 @@ test('linkedList.append()', t => {
   list.append('hat');
   t.is(list.size, 1);
 
+  var returnValue = list.append('cow');
+  t.is(returnValue, list);
+
 });
+

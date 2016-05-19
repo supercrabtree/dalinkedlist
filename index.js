@@ -30,6 +30,8 @@ module.exports = function dalinkedlist() {
         current.next = node;
       }
       length++;
+
+      return linkedList;
     },
 
     insert: function () {
