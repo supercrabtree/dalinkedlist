@@ -51,7 +51,7 @@ module.exports = function dalinkedlist() {
     },
 
     toString: function () {
-      
+      return linkedList.toArray().toString();
     },
 
     toArray: function () {

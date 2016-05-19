@@ -25,6 +25,13 @@ test('linkedList.append()', t => {
 
 });
 
+test('linkedList.toString()', t => {
+
+  var list = createLinkedList('hat', 'cow', 'tree', 'house');
+  t.deepEqual(list.toString(), 'hat,cow,tree,house')
+
+});
+
 test('linkedList.toArray()', t => {
 
   var list = createLinkedList('hat', 'cow', 'tree', 'house');
