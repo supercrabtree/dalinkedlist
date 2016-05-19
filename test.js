@@ -27,9 +27,13 @@ test('linkedList.append()', t => {
 
 test('linkedList.removeAt()', t => {
 
-  var list = createLinkedList('hat', 'cow', 'tree', 'house');
+  var list = createLinkedList('hat', 'tree', 'house');
   t.throws(() => list.removeAt(-1));
   t.throws(() => list.removeAt(100));
+
+  var removed = list.removeAt(1);
+  t.is(removed, 'tree');
+  t.deepEqual(list.toArray(), ['hat', 'house']);
 
 });
 
