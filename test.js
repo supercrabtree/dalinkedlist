@@ -7,3 +7,11 @@ test('linkedList.size', t => {
   t.is(list.size, 0);
 
 });
+
+test('linkedList.append()', t => {
+
+  var list = createLinkedList();
+  list.append('hat');
+  t.is(list.size, 1);
+
+});

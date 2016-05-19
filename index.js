@@ -19,8 +19,22 @@ module.exports = function dalinkedlist() {
     },
 
     // methods
-    append: function () {
-      
+    append: function (value) {
+
+      var current;
+      var node = {value: value};
+
+      if (head === undefined) {
+        head = node;
+      }
+      else {
+        current = head;
+        while (current.next) {
+          current.next = node;
+        }
+        current.next = node;
+      }
+      length++;
     },
 
     insert: function () {
