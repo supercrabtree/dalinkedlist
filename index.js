@@ -6,7 +6,7 @@ module.exports = function dalinkedlist() {
 
   var dataStore;
 
-  var length;
+  var length = 0;
   var head;
 
 
@@ -15,7 +15,7 @@ module.exports = function dalinkedlist() {
     // properties
 
     get size() {
-
+      return length;
     },
 
     // methods
