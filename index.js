@@ -55,7 +55,18 @@ module.exports = function dalinkedlist() {
     },
 
     toArray: function () {
-      
+
+      var array = [];
+      var current = head;
+
+      while (current.next) {
+        array.push(current.value);
+        current = current.next;
+      }
+
+      array.push(current.value);
+
+      return array;
     }
 
   };
