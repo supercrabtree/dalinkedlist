@@ -1,11 +1,6 @@
 module.exports = function dalinkedlist() {
   'use strict';
 
-
-  // the private internal array the linked list will proxy
-
-  var dataStore;
-
   var length = 0;
   var head;
 
