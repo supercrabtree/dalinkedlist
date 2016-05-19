@@ -58,5 +58,13 @@ module.exports = function dalinkedlist() {
 
   };
 
+
+  // if arguments are passed, append them all
+
+  if (arguments.length) {
+    Array.prototype.slice.call(arguments).forEach(linkedList.append);
+  }
+
+
   return Object.freeze(linkedList);
 };
