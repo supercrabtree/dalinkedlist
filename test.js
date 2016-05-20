@@ -66,6 +66,10 @@ test('linkedList.remove()', t => {
   t.is(returnValue, list);
   t.is(list.size, 3);
 
+  returnValue = list.remove('tree');
+  t.is(returnValue, list);
+  t.is(list.size, 3);
+
 });
 
 test('linkedList.indexOf()', t => {

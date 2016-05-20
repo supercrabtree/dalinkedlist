@@ -99,8 +99,20 @@ module.exports = function dalinkedlist() {
     },
 
     remove: function (value) {
-      var index = linkedList.indexOf(value);
-      linkedList.removeAt(index);
+      var current = head;
+      var previous;
+
+      while (current) {
+        if (value === current.value) break;
+        previous = current;
+        current = current.next;
+      }
+
+      if (current) {
+        previous.next = current.next;
+        length--;
+      }
+
       return linkedList;
     },
 
